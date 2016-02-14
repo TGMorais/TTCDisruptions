@@ -1,0 +1,50 @@
+.disruption-container {
+  @import "./shared.scss";
+
+  // border: 1px solid red;
+  // padding: 20px;
+  // color: white;
+
+  text-align: center;
+
+  .lines {
+    margin: 0 0 30px 0;
+  }
+
+  .error-msg {
+    color: red;
+  }
+
+  @mixin transport-line-color($id, $color, $light: false) {
+    .transport-line[data-idx="#{$id}"] {
+      background-color: $color;
+      border: 1px solid darken($color, 10%);
+
+      @if $light {
+        color: #585858;
+      }
+
+      &[data-selected="true"] {
+        background: darken($color, 9%);
+        // color:
+      }
+    }
+  }
+  .transport-line {
+    padding: 5px;
+    overflow: hidden;
+    color: #f2f2f2;
+    font-size: 0.9em;
+    text-align: center;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  @include transport-line-color(0, yellow, true);
+  @include transport-line-color(1, green);
+  @include transport-line-color(2, purple);
+  @include transport-line-color(3, cyan, true);
+
+}

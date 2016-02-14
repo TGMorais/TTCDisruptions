@@ -1,0 +1,18 @@
+/* Base Application Styles */
+body {
+  color: #000;
+  background: #eceef1;
+}
+
+
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.app-container {
+  background: #fff;
+  padding: 20px;
+  max-width: 600px;
+  height: 700px;
+}

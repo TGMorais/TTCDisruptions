@@ -13,7 +13,7 @@ stack:
 - Flask + [Flask Restful](http://flask-restful-cn.readthedocs.org/en/0.3.4/)
 
 commands:
-- `pip install -r requirements.txt`
+- `sudo pip install  --igno-installed -r requirements.txt`
 - `python api/app.py`
 
 

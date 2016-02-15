@@ -13,9 +13,10 @@ stack:
 - Flask + [Flask Restful](http://flask-restful-cn.readthedocs.org/en/0.3.4/)
 
 commands:
-- `sudo pip install  --igno-installed -r requirements.txt`
+- `sudo pip install  --ignore-installed -r requirements.txt`
 - `python api/app.py`
 
+*note*: if pip install throws package install errors, please try to install those packages individually trough `(sudo?) pip install xxx`
 
  <hr/>
 

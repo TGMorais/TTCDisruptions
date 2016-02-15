@@ -27,6 +27,6 @@ stack:
 
 commands:
 
-- `npm install`
+- `sudo npm install`
 - `npm run start` (dev)
 - `npm run dist` (prod static build (in */dist*))

@@ -20,6 +20,8 @@ commands:
  <hr/>
 
 ### */client* - (JS):
+
+(api must be running)
 <br/>
 stack:
 - Webpack + Babel (ES6&7)
